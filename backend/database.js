@@ -2,7 +2,7 @@
 const Sequelize = require("sequelize");
 const dbConfig = require("./config/database.json");
 const user = require("./models/index");
-const path = 'mysql://root:Isabelle1960!@localhost:3306/groupomania';
+const path = 'mysql://root:mdpdatabase@localhost:3306/groupomania';
 const sequelize = new Sequelize(path);
 
 sequelize.authenticate().then(() => {
